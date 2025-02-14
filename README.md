@@ -34,7 +34,7 @@ pip install opencv-python numpy matplotlib
 ### 🎯 Input Images  
 | Image 1  |  Image 2  |
 |:--------:|:--------:|
-| ![Input 1](1.jpeg) | ![Input 2](2.jpg) |
+| ![Input 1](1.jpeg) | ![Input 2](2.jpeg) |
 
 ### 🏆 Output Panorama  
 ![Stitched Panorama](path_to_sample_output.jpg)
