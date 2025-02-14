@@ -1,17 +1,29 @@
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
+from tkinter import Tk
+from tkinter.filedialog import askopenfilename
 
 def load_image(path):
     img = cv2.imread(path)
     return cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
-# Load two images
-image1 = load_image(r"C:\Users\Asus\Desktop\Utility\Seam Carving for image stitching\1.jpeg")
-image2 = load_image(r"C:\Users\Asus\Desktop\Utility\Seam Carving for image stitching\2.jpeg")
+# Hide Tkinter root window (we only need the file dialog)
+Tk().withdraw()
 
+# Ask the user to select the first image
+print("Please select the first image")
+image1_path = askopenfilename(title="Select the first image", filetypes=[("Image files", "*.jpg;*.jpeg;*.png;*.bmp")])
 
-# Show images
+# Ask the user to select the second image
+print("Please select the second image")
+image2_path = askopenfilename(title="Select the second image", filetypes=[("Image files", "*.jpg;*.jpeg;*.png;*.bmp")])
+
+# Load the images using the selected paths
+image1 = load_image(image1_path)
+image2 = load_image(image2_path)
+
+# Show the selected images
 plt.figure(figsize=(10, 5))
 plt.subplot(1, 2, 1)
 plt.imshow(image1)
@@ -24,6 +36,7 @@ plt.title("Image 2")
 plt.axis("off")
 
 plt.show()
+
 
 def resize_to_same_height(img1, img2):
     h1, w1, _ = img1.shape
