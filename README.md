@@ -23,10 +23,10 @@ Ensure you have Python installed, then run:
 pip install opencv-python numpy matplotlib
 ```
 
-##🛠️ Requirements
-Python 3.x
-OpenCV (opencv-python)
-NumPy
-Matplotlib
+## 🛠️ Requirements  
+- Python 3.x  
+- OpenCV (`opencv-python`)  
+- NumPy  
+- Matplotlib  
 
 
