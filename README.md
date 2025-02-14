@@ -27,6 +27,17 @@ pip install opencv-python numpy matplotlib
 - Python 3.x  
 - OpenCV (`opencv-python`)  
 - NumPy  
-- Matplotlib  
+- Matplotlib
+
+## 📸 Sample Results  
+
+### 🎯 Input Images  
+| Image 1  |  Image 2  |
+|:--------:|:--------:|
+| ![Input 1](Samples/1.jpeg) | ![Input 2](Samples/2.jpeg) |
+
+### 🏆 Output Panorama  
+![Stitched Panorama](Samples/panorama_seam_carving.png)
+
 
 
