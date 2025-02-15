@@ -12,7 +12,7 @@ This project implements **panorama stitching** using **seam carving**, an energy
 ✔ **Finds Overlapping Region** – Determines the best overlap area for blending  
 ✔ **Computes Energy Map** – Uses `Sobel` filters to detect seam importance  
 ✔ **Finds & Removes Optimal Seam** – Applies dynamic programming to carve the best seam  
-✔ **Blends Overlapping Region** – Smoothly merges images for a natural panorama  
+✔ **Blends Overlapping Region with Multi-Band Blending** – Uses a frequency-based approach for high-quality blending, ensuring seamless transitions  
 ✔ **Saves the Final Output** – Stores the stitched image as `panorama_seam_carving.png`  
 
 
